@@ -1,0 +1,8 @@
+nombre = input('Digita tu nombre: ').lower()
+empresa = input("Digita tu empresa: ").lower()
+dominio = input("Digita tu dominio: ").lower()
+nombreLimpio = nombre.split()
+empresaLimpio = empresa.split()
+dominioLimpio = dominio.split()
+email= ('{}.{}@{}.{}').format(nombreLimpio[0],nombreLimpio[1],empresaLimpio[0], dominioLimpio[0])
+print(f'Su email generado es : {email}')
